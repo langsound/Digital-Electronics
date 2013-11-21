@@ -8,7 +8,7 @@ use this sketch to test your serial connections.
 int myBaud = 19200;  //19200 for Serial, 31250 for spec MIDI
 int clockOut =13; //LED on board
 
-int midiStatus, note, vel, ccNumber, ccValue;
+int incomingByte, midiStatus, note, vel, ccNumber, ccValue;
 
 
 void setup() {
