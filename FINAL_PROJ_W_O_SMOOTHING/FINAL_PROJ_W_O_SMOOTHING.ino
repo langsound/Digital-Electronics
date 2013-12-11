@@ -1,0 +1,113 @@
+/* this program reads a bunch of buttons and sends serial or midi data 
+ 
+ 
+ 
+ */
+
+// declarations of variables and stuff
+int notes[] = {
+  60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 77, 79, 81, 83, 84, 96};
+int myBaud = 19200;  // serial for max patch,  spec MIDI 31250
+
+const int buttonCount = 9;
+int muxS0 = 5; // the arduino digital pin number connected to mux S0...
+int muxS1 = 6; // the arduino digital pin number connected to mux S1...
+int muxS2 = 7; // the arduino digital pin number connected to mux S2...
+int muxS3 = 8; // the arduino digital pin number connected to mux S3...
+int sigPin = 9; // the arduino digital pin number connected ot the mux SIG pin
+int buttons[16];
+int buttons_old[16];
+int vel = 127;
+int statusByte = 144;
+
+void setup(){
+  Serial.begin(myBaud);
+  pinMode(muxS0, OUTPUT);
+  pinMode(muxS1, OUTPUT);
+  pinMode(muxS2, OUTPUT);
+  pinMode(muxS3, OUTPUT);
+  pinMode(sigPin, INPUT);
+
+
+}//end setup
+
+void loop(){
+
+  // Read if button pressed…
+  for(int i; i< buttonCount; i++){
+    // Set mux channel one after the other
+    setMuxChannel(i); 
+    // measure channel one after the other and store them
+    buttons[i] = digitalRead(sigPin); 
+    //buttons[i + muxOffSet] = digitalRead(otherSigPin);
+  }//end read buttons
+
+
+  // maybe add analog read, assign to vel? 
+
+
+  //DO something  
+  for(int i; i< buttonCount; i++){
+    //IF button state changes, do something
+    if(buttons[i] != buttons_old[i]){
+
+      buttons_old[i] = buttons[i];
+
+      sendMIDI(statusByte, notes[i], constrain(vel * buttons[i], 0, 127));         
+
+    }//end if not old
+
+
+
+  }//end Do something 
+
+
+
+}//end loop
+
+
+
+
+
+//void sendMIDI(int statusByte, int Data1, int Data2){
+//  Serial.write(statusByte);   //midi status byte
+//  Serial.write(Data1);        //cc number or note number
+//  Serial.write(Data2);        //cc data or note velocity
+//  delay(3);
+//}//end void sendMIDI
+
+
+//
+//void setMuxChannel(int channelNumber){
+//  digitalWrite(muxS0, channelNumber & 1);  // dec to binary conversion for 1s place
+//  digitalWrite(muxS1, channelNumber & 2);
+//  digitalWrite(muxS2, channelNumber & 4);
+//  digitalWrite(muxS3, channelNumber & 8);
+//
+//}//end setMuxChannel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
