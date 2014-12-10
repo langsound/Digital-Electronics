@@ -10,7 +10,7 @@
 ,
 		"rect" : [ 25.0, 69.0, 398.0, 316.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -40,7 +40,7 @@
 					"patching_rect" : [ 269.0, 114.0, 61.0, 100.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 126.5, 75.0, 128.0, 47.0 ],
+					"presentation_rect" : [ 126.5, 75.0, 129.0, 47.0 ],
 					"text" : "use this patch to send continuous control messages"
 				}
 
@@ -122,7 +122,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-11",
-					"items" : [ "to Max 1", ",", "to Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "Network Session 1", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,

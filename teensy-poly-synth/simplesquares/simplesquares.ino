@@ -8,7 +8,7 @@
 
 
 const int num = 25;        
-int increment = 15;
+int increment = 30;
 
 // divisors for just intonation scale on 2, 3, and 5 <http://en.wikipedia.org/wiki/Just_intonation#The_twelve_tone_scale>
 //              C       E      G        A      CC     E     F     G      A      C     E     F       G     A      CC     E     F     G      A      CC
