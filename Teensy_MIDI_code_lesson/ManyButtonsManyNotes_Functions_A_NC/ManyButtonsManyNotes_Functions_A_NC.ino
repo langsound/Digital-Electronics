@@ -8,7 +8,7 @@ int myChannel=144;
 
 void readMyButtons(){
  for(int i; i<16; i++){
-   myButtons[i] = AnalogRead(i);
+   myButtons[i] = analogRead(i);
    if(myButtons[i] > 512){
      myButtons[i] = 1;
    }
