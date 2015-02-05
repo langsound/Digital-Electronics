@@ -49,14 +49,14 @@ void loop(){
      myOldPins[p]= myPins[p];
      
       if(myPins[p]){
-        usbMIDI.sendNoteOn(myNotes[p], 0, 144);
+        usbMIDI.sendNoteOn(myNotes[p], 127, 144);
         digitalWrite(13, LOW); 
         delay(2);
        }//if myPins[p]
        
        else{
          
-          usbMIDI.sendNoteOn(myNotes[p], 127, 144);
+          usbMIDI.sendNoteOn(myNotes[p], 0, 144);
           digitalWrite(13, HIGH);
           delay(2);
           
