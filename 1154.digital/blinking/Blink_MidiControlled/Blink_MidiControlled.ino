@@ -21,9 +21,9 @@ void setup() {
   usbMIDI.setHandleNoteOff(OnNoteOff);
   usbMIDI.setHandleNoteOn(OnNoteOn) ;
 
-  digitalWrite(notePin, HIGH);
+  digitalWrite(led, HIGH);
   delay(1000);
-  digitalWrite(notePin, LOW);
+  digitalWrite(led, LOW);
   delay(1000);
 
 }
