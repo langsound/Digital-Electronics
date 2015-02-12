@@ -20,7 +20,7 @@ pinMode(led, OUTPUT);
 // the loop routine runs over and over again forever:
 void loop() {
 if(analogRead(1) > 512){
-turnPot = (analogRead(0) * 2) + 250 // measure A1 return a value 250 to 2298 (being used a milliseconds
+turnPot = (analogRead(0) * 2) + 250; // measure A1 return a value 250 to 2298 (being used a milliseconds
 }//end if
 
 digitalWrite(led, HIGH); // turn the LED on (HIGH is the voltage level)
