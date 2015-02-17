@@ -35,9 +35,9 @@ void loop() {
   if(gatePot > 0){
 
     digitalWrite(led, HIGH); // turn the LED on (HIGH is the voltage level)
-    delay(turnPot); // wait for a some time set by turnPot
+    delayMicroseconds(turnPot); // wait for a some time set by turnPot
     digitalWrite(led, LOW); // turn the LED off by making the voltage LOW
-    delay(turnPot); // wait for a some time set by turnPot
+    delayMicroseconds(turnPot); // wait for a some time set by turnPot
   }//end if
   
 }//end loop
@@ -45,7 +45,7 @@ void loop() {
 
 void OnNoteOn(byte channel, byte note, byte velocity)
 {
-  turnPot = 128 - note ;
+  turnPot = (128 - note) / 20  ;
   gatePot = 127;
 }
 
