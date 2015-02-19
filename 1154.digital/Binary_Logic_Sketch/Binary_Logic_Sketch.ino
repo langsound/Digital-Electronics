@@ -14,7 +14,7 @@ int myNotes[] = {24, 31,   36,43,   48, 55,   60, 67,  72, 79, 84, 91, 96, 103};
 void setup(){
   //setinput and output pins
     //inputs pins 13-20
-  for(int p=13; p<21; p++){
+  for(int p=14; p<22; p++){
    pinMode(p, INPUT); 
   } 
   
@@ -45,7 +45,7 @@ void setup(){
 void loop(){
     
    for(int p; p<12; p++){
-   myPins[p] = digitalRead(p);
+   myPins[p] = digitalRead(p+14);
    
    
    if(myPins[p] != myOldPins[p]){
@@ -84,11 +84,11 @@ void loop(){
 void OnNoteOn(byte channel, byte note, byte velocity)
 {
   //contrain is used to prevent other notes from switching LEDs
-  digitalWrite(contrain(note,5,12), HIGH);
+  digitalWrite(constrain(note,5,12), HIGH);
 }
 
 void OnNoteOff(byte channel, byte note, byte velocity)
 {
-  digitalWrite(contrain(note,5,12), LOW);
+  digitalWrite(constrain(note,5,12), LOW);
 }
 

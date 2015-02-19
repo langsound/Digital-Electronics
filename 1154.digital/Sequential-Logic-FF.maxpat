@@ -55,7 +55,7 @@
 					"patching_rect" : [ 38.0, 159.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.25, 159.0, 150.0, 20.0 ],
-					"text" : "pin 1 output"
+					"text" : "pin 5 output"
 				}
 
 			}
@@ -386,7 +386,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 180.0, 310.0, 100.0, 20.0 ],
-					"text" : "prepend 1"
+					"text" : "prepend 5"
 				}
 
 			}
@@ -863,7 +863,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-75", 0 ]
+					"source" : [ "obj-75", 1 ]
 				}
 
 			}
@@ -872,7 +872,7 @@
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-75", 1 ]
+					"source" : [ "obj-75", 2 ]
 				}
 
 			}
