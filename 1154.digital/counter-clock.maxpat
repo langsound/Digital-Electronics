@@ -112,7 +112,7 @@
 					"id" : "obj-24",
 					"maxclass" : "number",
 					"maximum" : 1000,
-					"minimum" : 25,
+					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
