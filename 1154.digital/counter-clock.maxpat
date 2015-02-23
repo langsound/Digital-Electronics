@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 25.0, 69.0, 485.0, 648.0 ],
+		"rect" : [ 25.0, 69.0, 282.0, 283.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -84,7 +84,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 139.0, 399.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.25, 164.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 30.25, 165.0, 150.0, 20.0 ],
 					"text" : "pin 13 output"
 				}
 
