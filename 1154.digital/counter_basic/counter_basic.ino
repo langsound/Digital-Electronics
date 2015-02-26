@@ -77,6 +77,8 @@ void setup() {
   
   cpu = digitalRead(CPU) == HIGH;
   cpd = digitalRead(CPD) == HIGH;
+  usbMIDI.setHandleNoteOff(OnNoteOff);
+  usbMIDI.setHandleNoteOn(OnNoteOn) ;
 }
   
 void loop() {
@@ -116,6 +118,7 @@ void OnNoteOff(byte channel, byte note, byte velocity)
 {
   digitalWrite(constrain(note,5,13), LOW);
 }
+
 
 
 
