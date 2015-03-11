@@ -1,3 +1,8 @@
+/*
+basic Midi/Decimal to Mux/Binary sketch.
+step sequencing. DIGITAL/ANALOG style.
+
+*/
 
 int led = 13; //light it up
 
@@ -34,7 +39,7 @@ void setup() {
     delay(k);
     digitalWrite(led, LOW);
     delay(k);
-  }
+  }//end lightshow
   
   // stop the oscilator until something happens later.
    digitalWrite(oscGate, LOW);
@@ -43,11 +48,11 @@ void setup() {
  // set these so something happens when usbMIDI funcitons are called
   usbMIDI.setHandleNoteOff(OnNoteOff);
   usbMIDI.setHandleNoteOn(OnNoteOn) ;
-}
+}//end setup
+
 
 
 void loop() {
-
 
  //recieving midi
  usbMIDI.read();
@@ -60,19 +65,25 @@ void loop() {
 // specific actions when MIDI notes are read.
 void OnNoteOn(byte channel, byte note, byte velocity)
 {
+  //turn on LED
   digitalWrite(led, HIGH);
-  digitalWrite(oscGate, HIGH);
-  digitalWrite(S0, ct & 1);
-  digitalWrite(S1, ct & 2 );
-  digitalWrite(S2, ct & 4 );
-  digitalWrite(S3, ct & 8 );
   
-}
+  //set mux pins so that one pot connects to osc control
+  digitalWrite(S0, note & 1);
+  digitalWrite(S1, note & 2 );
+  digitalWrite(S2, note & 4 );
+  digitalWrite(S3, note & 8 );
+  // turn on osc
+  digitalWrite(oscGate, HIGH);
+  
+}//end OnNoteOn
 
 void OnNoteOff(byte channel, byte note, byte velocity)
 {
+  //turn off osc
   digitalWrite(oscGate, LOW);
+  //turn off LED
   digitalWrite(led, LOW);
-}
+}//end OnNoteOff
 
   
