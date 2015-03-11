@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 25.0, 69.0, 261.0, 267.0 ],
+		"rect" : [ 25.0, 69.0, 166.0, 287.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -36,7 +36,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 278.0, 451.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.25, 237.0, 20.0, 20.0 ]
+					"presentation_rect" : [ 139.25, 237.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -65,7 +65,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 58.0, 15.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 43.0, 23.0, 115.0, 20.0 ],
+					"presentation_rect" : [ 22.0, 23.0, 115.0, 20.0 ],
 					"text" : "tick-tock/switch-flop"
 				}
 
@@ -81,7 +81,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 106.0, 60.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 70.0, 67.0, 91.0, 20.0 ],
+					"presentation_rect" : [ 49.0, 67.0, 91.0, 20.0 ],
 					"text" : "clock start/stop"
 				}
 
@@ -97,7 +97,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 139.0, 399.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.25, 165.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 9.25, 165.0, 150.0, 20.0 ],
 					"text" : "pin 13 output"
 				}
 
@@ -113,7 +113,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 106.0, 188.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 96.0, 110.5, 75.0, 20.0 ],
+					"presentation_rect" : [ 75.0, 110.5, 75.0, 20.0 ],
 					"text" : "clock period"
 				}
 
@@ -132,7 +132,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 156.0, 208.0, 50.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 43.0, 110.5, 50.0, 20.0 ]
+					"presentation_rect" : [ 22.0, 110.5, 50.0, 20.0 ]
 				}
 
 			}
@@ -146,7 +146,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 106.0, 208.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 43.0, 63.5, 27.0, 27.0 ]
+					"presentation_rect" : [ 22.0, 63.5, 27.0, 27.0 ]
 				}
 
 			}
@@ -175,7 +175,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 128.0, 275.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 65.0, 136.5, 44.0, 20.0 ],
+					"presentation_rect" : [ 44.0, 136.5, 44.0, 20.0 ],
 					"text" : "clk sig"
 				}
 
@@ -204,7 +204,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 106.0, 275.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 43.0, 136.5, 20.0, 20.0 ]
+					"presentation_rect" : [ 22.0, 136.5, 20.0, 20.0 ]
 				}
 
 			}
@@ -235,7 +235,7 @@
 					"patching_rect" : [ 129.0, 530.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 30.25, 204.0, 150.0, 33.0 ],
+					"presentation_rect" : [ 9.25, 204.0, 150.0, 33.0 ],
 					"text" : "Select Teensy to connect to circuits"
 				}
 
@@ -253,7 +253,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 278.0, 543.0, 125.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.25, 237.0, 125.0, 20.0 ]
+					"presentation_rect" : [ 9.25, 237.0, 125.0, 20.0 ]
 				}
 
 			}
@@ -306,7 +306,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.0, 47.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.25, 57.5, 142.5, 100.0 ]
+					"presentation_rect" : [ 9.25, 57.5, 142.5, 100.0 ]
 				}
 
 			}
