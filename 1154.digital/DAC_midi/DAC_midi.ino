@@ -100,7 +100,7 @@ void loop(){
 void OnNoteOn(byte channel, byte note, byte velocity)
 {
   // mapping will likely be needed to produce satisfactory results
-  // format, replace "note * 2" with the following: "(map(note, 60, 240))" ommiting the quotes
+  // format, replace "note * 2" with the following: "(map(note, 0, 127, 60, 240))" ommiting the quotes
   // change the mapped min "60" and mapped max "240" as needed
   analogWrite(myPWM, note * 2);
   digitalWrite(myGate, HIGH);
