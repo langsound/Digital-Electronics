@@ -8,7 +8,7 @@ int myPins[12];
 int myOldPins[12];
 int myNotes[] = {24, 31,   36,43,   48, 55,   60, 67,  72, 79, 84, 91, 96, 103};
 int led = 13;
-int myGate = 12;
+int myGate = 9;  
 int myPWM =  10;
 // pwm capable pins: 3, 4, 5, 6, 9, 10, 20, 21, 22, 23, 25, 32
 
@@ -100,9 +100,9 @@ void loop(){
 void OnNoteOn(byte channel, byte note, byte velocity)
 {
   // mapping will likely be needed to produce satisfactory results
-  // format, replace "note" with the following: (map(note, 60, 240))
+  // format, replace "note * 2" with the following: "(map(note, 60, 240))" ommiting the quotes
   // change the mapped min "60" and mapped max "240" as needed
-  analogWrite(myPWM, note);
+  analogWrite(myPWM, note * 2);
   digitalWrite(myGate, HIGH);
 }
 
