@@ -37,7 +37,7 @@ void setup(){
 }//
 
 //Send the MIDI
-void sendMidi(int statusByte, int Data1Byte, int Data2Byte){
+void sendMIDI(int statusByte, int Data1Byte, int Data2Byte){
   
  //send the three bytes of MIDI in order. 
  Serial.write(statusByte);
