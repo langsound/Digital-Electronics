@@ -1,3 +1,11 @@
+/* this program reads touch pins with generic code that could easily be modified
+to work with traditional buttons, or even "analog" buttons souch as FSRs
+works only on Teensy and other TouchRead capapble microcontrollers
+requires no special libaries like the button bounce lib.
+
+output is usb midi,  plays notes.  will work with most midi software.
+
+*/
 int myLED = 13;;
 int myButtons[16];
 int myOldButtons[16];
