@@ -11,14 +11,14 @@ to a multiplexor with less than 12 additional lines of code.
 
 // storage and processing stuff
 int NumberOfAnalogPins = 8;
-int pinReadingStorage[8];
-int pinsAvg[8];
+int pinReadingStorage[10];
+int pinsAvg[10];
 // the above argumnets and variables should match all 8s or all 10s or all 16s,
 
 float smoothingCo = 0.9;// must be between 0.001 and 0.999
 
 //serial stuff
-int myBaud = 31250; // MIDI=31250, serial = 9600 or in our class 19200
+//int myBaud = 31250; // MIDI=31250, serial = 9600 or in our class 19200
 
 
 int LED = 13;//the built in LED
@@ -57,7 +57,7 @@ void readThePins(int numberOfPins){
       //add mux code here
     
     
-     delayMicroseconds(500);
+     delayMicroseconds(50000);
      pinReadingStorage[i]=analogRead(i);
     
   }//end pins loop
